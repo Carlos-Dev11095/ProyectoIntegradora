@@ -1,0 +1,21 @@
+<ion-content>
+  <div class="act" style="background-image: url('../../assets/img/backGround/enemigosBG.jpg');">
+      <br/>
+      <br/>
+      <br/>
+      <ion-card>
+           <img alt="Silhouette of mountains" src="{{enemigo.imagen}}" />
+           <ion-card-header>
+              <ion-card-title>{{enemigo.nombre}}</ion-card-title> 
+           </ion-card-header><br/> 
+          <ion-card-content>
+              {{enemigo.descripcion}}
+          </ion-card-content>
+              <ion-row>
+                <ion-col>Daño <br>{{enemigo.stats.dano}}</ion-col>
+                <ion-col>Salto <br>{{enemigo.stats.vida}}</ion-col>
+              </ion-row>
+      </ion-card>
+      <ion-button color="principal" expand="full" (click)="regresar()" >Salir <ion-icon name="exit-sharp"></ion-icon></ion-button>
+  </div>
+</ion-content>

@@ -1,0 +1,22 @@
+  <ion-app>
+    <ion-menu side="start" menuId="first" contentId="main" >
+      <ion-header>
+        <ion-toolbar color="menus">
+          <ion-title>Contenido</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content color="menus">
+        <ion-list>
+          <ion-menu-toggle>
+            <ion-item color="itemmenu" *ngFor="let item of elementos"
+            [routerLink]="item.ruta" detail>
+              <ion-icon name="{{item.icono}}" slot="start" color="{{item.color}}"></ion-icon>
+              <ion-label>{{item.nombre}}</ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+        </ion-list>
+      </ion-content>
+    </ion-menu>
+    <img src="../../assets/img/nosotros/prp.png">
+  <ion-router-outlet id="main"></ion-router-outlet>
+</ion-app>

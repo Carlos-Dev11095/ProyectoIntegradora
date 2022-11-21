@@ -1,0 +1,24 @@
+<app-header titulo="objetos" color="objetos"></app-header>
+
+<ion-content>
+    <div class="act" style="background-image: url('../../assets/img/backGround/objetosBG.jpg'); height: auto;">
+        <br>
+        <ion-card>
+            <ion-card-header>
+            <ion-card-title>Objetos Recolectables</ion-card-title>
+            </ion-card-header>
+        </ion-card>
+        <ion-list>
+            <ion-item 
+            color="rgba(255, 255, 255, 0.075);"
+            *ngFor="let objeto of objetos"
+            (click)="verDetalleObjeto(objeto.id)"
+            >
+              <ion-thumbnail slot="start">
+                <img alt="Silhouette of mountains" src="{{objeto.imagen}}" />
+              </ion-thumbnail>
+                <ion-label color="light" style="font-family: 'Courier New', Courier, monospace;">{{objeto.nombre  }}</ion-label>
+            </ion-item>
+          </ion-list>
+    </div>
+</ion-content>

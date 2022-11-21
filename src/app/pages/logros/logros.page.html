@@ -1,0 +1,23 @@
+<app-header titulo="Logros" color="logros"></app-header>
+
+<ion-content>
+    <div class="act" style="background-image: url('../../assets/img/backGround/logrosBG.jpg');">
+        <br>
+        <ion-card>
+            <ion-card-header>
+            <ion-card-title>Logros In-Game</ion-card-title>
+            </ion-card-header>
+        </ion-card>
+        <ion-list>
+            <ion-item color="rgba(255, 255, 255, 0.075);"
+            *ngFor="let logro of logros"
+            (click)="verDetalleLogros(logro.id)"
+            >
+              <ion-thumbnail slot="start">
+                <img alt="Silhouette of mountains" src="{{logro.imagen}}" />
+              </ion-thumbnail>
+                <ion-label color="light" style="font-family: 'Courier New', Courier, monospace;">{{logro.nombre}}</ion-label>
+            </ion-item>
+          </ion-list>
+    </div>
+</ion-content>

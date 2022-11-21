@@ -1,0 +1,23 @@
+<app-header titulo="personajes" color="principales" n="principales"></app-header>
+
+<ion-content>
+    <div class="act" style="background-image: url('../../assets/img/backGround/principalesBG.jpg');">
+        <br>
+        <ion-card>
+            <ion-card-header>
+            <ion-card-title>Personajes Principales</ion-card-title>
+            </ion-card-header>
+        </ion-card>
+        <ion-list>
+            <ion-item 
+            color="rgba(255, 255, 255, 0.075);"
+            *ngFor="let personaje of personajesPrincipales"
+            (click)="verDetallePersonaje(personaje.id)">
+              <ion-thumbnail slot="start">
+                <img alt="Silhouette of mountains" src="../../assets/img/notfound.png" />
+              </ion-thumbnail>
+                <ion-label color="light" style="font-family: 'Courier New', Courier, monospace;">{{personaje.nombre}}</ion-label>
+            </ion-item>
+          </ion-list>
+    </div>
+</ion-content>

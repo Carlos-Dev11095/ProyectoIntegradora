@@ -1,0 +1,22 @@
+<ion-content>
+    <div class="act" style="background-image: url('../../assets/img/backGround/jefesBG.jpg');">
+        <br/>
+        <br/>
+        <br/>
+        <ion-card>
+             <img alt="Silhouette of mountains" src="../../assets/img/notfound.png" />
+             <ion-card-header>
+                <ion-card-title>{{jefe.nombre}}</ion-card-title>
+                <ion-card-subtitle> Habilidad: {{jefe.habilidad}}</ion-card-subtitle>
+             </ion-card-header><br/> 
+            <ion-card-content>
+                {{jefe.descripcion}}
+            </ion-card-content>
+                <ion-row>
+                  <ion-col>Daño <br>{{jefe.stats.dano}}</ion-col>
+                  <ion-col>Salto <br>{{jefe.stats.vida}}</ion-col>
+                </ion-row>
+        </ion-card>
+        <ion-button color="principal" expand="full" (click)="regresar()" >Salir <ion-icon name="exit-sharp"></ion-icon></ion-button>
+    </div>
+</ion-content>

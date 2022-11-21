@@ -1,0 +1,21 @@
+<ion-content>
+    <div class="act" style="background-image: url('../../assets/img/backGround/nivelesBG.jpg');">
+        <br/>
+        <br>
+        <br>
+        <br>
+        <br>
+        <ion-card>
+             <img alt="Silhouette of mountains" src="{{nivel.imagen}}" />
+             <ion-card-header>
+                <ion-card-title>{{nivel.nombre}}</ion-card-title>
+             </ion-card-header>
+            <ion-card-content>
+                {{nivel.Ubicacion}}
+            </ion-card-content>
+                <ion-row>
+                </ion-row>
+        </ion-card>
+        <ion-button color="principal" expand="full" (click)="regresar()" >Salir <ion-icon name="exit-sharp"></ion-icon></ion-button>
+    </div>
+</ion-content>

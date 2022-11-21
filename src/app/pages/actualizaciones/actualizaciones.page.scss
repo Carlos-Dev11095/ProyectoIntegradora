@@ -1,0 +1,46 @@
+.act{
+height: 100%;
+color: rgb(255, 255, 255);
+font-family: 'Courier New', Courier, monospace;
+
+}
+.version{
+    text-align: center;
+}
+.texto{
+    margin-left: 10px;
+    color: black;
+}
+ion-img{
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+ion-title {
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+    font-weight: bold;
+    font-size: x-large;
+
+  }
+  ion-card{
+    font-family:'Courier New', Courier, monospace;
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.075);
+  }
+  ion-card-title{
+    text-align: center;
+    font-weight: bold;
+    font-size: x-large;
+    color: rgb(255, 255, 255);
+  }
+  ion-card-subtitle{
+    font-weight: bold;
+    text-align: center;
+    font-size: large;
+    color: rgb(255, 255, 255);
+  }
+  ion-card-content{
+    font-size: medium;
+    margin-left: 10px;
+  }

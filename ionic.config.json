@@ -1,0 +1,7 @@
+{
+  "name": "proyectoIntegradora",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

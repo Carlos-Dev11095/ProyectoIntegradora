@@ -1,0 +1,23 @@
+<app-header titulo="niveles" color="niveles"></app-header>
+
+<ion-content>
+    <div class="act" style="background-image: url('../../assets/img/backGround/nivelesBG.jpg');">
+        <br>
+        <ion-card>
+            <ion-card-header>
+            <ion-card-title>Niveles</ion-card-title>
+            </ion-card-header>
+        </ion-card>
+        <ion-list>
+            <ion-item 
+            color="rgba(255, 255, 255, 0.075);"
+            *ngFor="let nivel of niveles"
+            (click)="verDetalleNivel(nivel.id)">
+              <ion-thumbnail slot="start">
+                <img alt="Silhouette of mountains" src="{{nivel.imagen}}" />
+              </ion-thumbnail>
+                <ion-label color="light" style="font-family: 'Courier New', Courier, monospace;">{{nivel.nombre}}</ion-label>
+            </ion-item>
+          </ion-list>
+    </div>
+</ion-content>

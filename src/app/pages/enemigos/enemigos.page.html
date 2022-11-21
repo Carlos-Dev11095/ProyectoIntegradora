@@ -1,0 +1,24 @@
+<app-header titulo="enemigos" color="enemigos"></app-header>
+
+<ion-content>
+    <div class="act" style="background-image: url('../../assets/img/backGround/enemigosBG.jpg');">
+        <br>
+        <ion-card>
+            <ion-card-header>
+            <ion-card-title>Enemigos de nivel</ion-card-title>
+            </ion-card-header>
+        </ion-card>
+        <ion-list>
+            <ion-item 
+            color="rgba(255, 255, 255, 0.075);"
+            *ngFor="let enemigo of enemigos"
+            (click)="verDetalleEnemigos(enemigo.id)"
+            >
+              <ion-thumbnail slot="start">
+                <img alt="Silhouette of mountains" src="{{enemigo.avatar}}" />
+              </ion-thumbnail>
+                <ion-label color="light" style="font-family: 'Courier New', Courier, monospace;">{{enemigo.nombre}}</ion-label>
+            </ion-item>
+          </ion-list>
+    </div>
+</ion-content>
